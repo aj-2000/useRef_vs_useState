@@ -1,14 +1,14 @@
 import { ChangeEvent, useMemo, useRef, useState } from "react";
 
 const App = () => {
-  console.log("render"); // prints "render" multiples times in useState implementation
+  console.log("render"); // prints "render" multiple times in useState implementation
 
   const inputRef = useRef<HTMLInputElement>(null);
 
   const someValue = () => {
     console.log("some value calculated");
     return "some value calculated after computationally expensive operation";
-  }; // prints "some value calculated" multiples times in useState implementation
+  }; // prints "some value calculated" multiple times in useState implementation
 
   // const someValue = useMemo(() => {
   //   console.log("some value calculated");
